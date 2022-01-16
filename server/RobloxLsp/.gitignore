@@ -1,0 +1,15 @@
+/server/log
+/server/bin
+/server/script/output.lua
+/client/node_modules
+TODO-LIST
+/log
+/build
+/test/temp.lua
+/meta/*
+!/meta/template
+!/meta/3rd
+/bin-Windows
+/bin-Linux
+/bin-macOS
+/bin
