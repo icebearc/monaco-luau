@@ -1,5 +1,4 @@
 /server/log
-/server/bin
 /server/script/output.lua
 /client/node_modules
 TODO-LIST
@@ -9,7 +8,3 @@ TODO-LIST
 /meta/*
 !/meta/template
 !/meta/3rd
-/bin-Windows
-/bin-Linux
-/bin-macOS
-/bin
