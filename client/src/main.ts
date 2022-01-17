@@ -4,6 +4,7 @@ import editorWorker from "monaco-editor-core/esm/vs/editor/editor.worker?worker"
 import { LineEndings, QuoteStyle } from "stylua-wasm";
 
 import { connectLanguageServer } from "./connectLanguageServer";
+import { theme } from "./language";
 import { registerFormatting } from "./registerFormatting";
 import { registerLanguage } from "./registerLanguage";
 
@@ -25,29 +26,37 @@ registerFormatting({
 	quote_style: QuoteStyle.AutoPreferSingle,
 	no_call_parentheses: false,
 });
+monaco.editor.defineTheme("luau-dark", theme);
 
 const protocol = location.protocol === "https:" ? "wss" : "ws";
 connectLanguageServer(`${protocol}://${location.hostname}:${port}`);
 
 const editor = monaco.editor.create(document.querySelector("#editor-container")!, {
 	model: monaco.editor.createModel(`function test()\nprint('hello')\nend`, "lua"),
-	theme: "vs-dark",
+	theme: "luau-dark",
 	tabSize: 2,
+
+	fontSize: 14,
+	fontFamily: "'JetBrains Mono', Consolas, 'Courier New', monospace",
+	fontLigatures: true,
+
+	insertSpaces: false,
+
+	smoothScrolling: true,
+	cursorBlinking: "smooth",
+	cursorSmoothCaretAnimation: true,
+	minimap: { enabled: false },
+	padding: { top: 24 },
+
+	folding: true,
+	foldingHighlight: false,
+	showFoldingControls: "always",
+	dragAndDrop: true,
+	links: true,
+	formatOnPaste: false,
+
+	showDeprecated: true,
+	suggest: { snippetsPreventQuickSuggestions: false },
 });
 
 editor.getAction("editor.action.formatDocument").run();
-
-// Optionally we can also add an additional lua file that contains API headers
-// and global function and variable definitions. These will also show up in the
-// autocompletion!
-monaco.editor.createModel(
-	`
----@class Apple
----@field color string
-
---- A Global Function
----@param num number
-function GlobalFunction(num) end
-`,
-	"lua",
-);

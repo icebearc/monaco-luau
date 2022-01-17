@@ -162,7 +162,7 @@ local ConfigTemplate = {
     },
     completion = {
         enable             = {true,      Boolean},
-        callParenthesess   = {false,     Boolean},
+        callParenthesess   = {true,     Boolean},
         keywordSnippet     = {'Replace', String},
         displayContext     = {0,         Integer},
         endAutocompletion  = {false,     Boolean},

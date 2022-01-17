@@ -1,6 +1,6 @@
-// @ts-ignore
-import { conf, language } from "monaco-editor/esm/vs/basic-languages/lua/lua.js";
 import { languages } from "monaco-editor-core";
+
+import { language, languageConfiguration } from "./language";
 
 export const registerLanguage = () => {
 	languages.register({
@@ -9,5 +9,5 @@ export const registerLanguage = () => {
 		aliases: ["Lua", "lua"],
 	});
 	languages.setMonarchTokensProvider("lua", language);
-	languages.setLanguageConfiguration("lua", conf);
+	languages.setLanguageConfiguration("lua", languageConfiguration);
 };

@@ -151,10 +151,10 @@ function m.getLibraryMatchers()
         })
         librarys[m.normalize(path)] = true
     end
-    --[[log.debug("metapath:", METAPATH)
+    log.debug("metapath:", METAPATH)
     if METAPATH then
-         librarys[m.normalize(METAPATH)] = true
-    end]]
+        librarys[m.normalize(METAPATH)] = true
+    end
     m.libraryMatchers = {}
     for path in pairs(librarys) do
         if fs.exists(fs.path(path)) then
