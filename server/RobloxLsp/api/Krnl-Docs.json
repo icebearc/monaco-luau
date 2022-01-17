@@ -1,5 +1,3 @@
 {
-	"@luau/global/hookfunction": {
-		"documentation": "<p>Hookfunction global test.</p>"
-	}
+	"@krnl/global/hookfunction": "<p>Returns an iterator function and the provided table for use in a for loop.</p>"
 }

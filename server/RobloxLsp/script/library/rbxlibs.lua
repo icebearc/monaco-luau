@@ -752,7 +752,8 @@ end
 local function parseDocumentaion()
     if not m.Docs then
         m.Docs = json.decode(util.loadFile(ROOT / "api" / "API-Docs.json"))
-        for k, v in pairs(json.decode(util.loadFile(ROOT / "api" / "Krnl-Docs.json"))) do
+        m.KrnlDocs = json.decode(util.loadFile(ROOT / "api" / "Krnl-Docs.json"))
+        for k, v in pairs(m.KrnlDocs) do
           m.Docs[k] = v
         end
     end
@@ -969,6 +970,9 @@ function m.init()
     defaultlibs = defaultlibs or require("library.defaultlibs")
     if not defaultlibs.initialized then
         defaultlibs.init()
+    end
+    if m.global then
+      return -- MIGHT BREAK ROBLOX CLIENT SYNC
     end
     m.global = util.deepCopy(defaultlibs.global)
     for k, v in pairs(defaultlibs.krnl) do
