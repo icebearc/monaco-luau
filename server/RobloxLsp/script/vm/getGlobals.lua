@@ -37,6 +37,11 @@ function vm.getGlobals(key, uri, onlySet)
             end
         end
     end
+    for _, lib in pairs(defaultlibs.krnl) do
+        if key == "*" or lib.name == key then
+            globals[#globals+1] = lib
+        end
+    end
     local dummyCache = vm.getCache 'globalDummy'
     for name in pairs(config.config.diagnostics.globals) do
         if key == '*' or name == key then

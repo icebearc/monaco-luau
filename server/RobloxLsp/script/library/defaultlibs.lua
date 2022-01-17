@@ -26,102 +26,102 @@ m.primitiveTypes = {
 }
 
 m.dataModelChild = {
-	Players = {
-		name = "Players",
-		type = "type.library",
-		kind = "child",
-		value = {
-			[1] = "Players",
+  Players = {
+    name = "Players",
+    type = "type.library",
+    kind = "child",
+    value = {
+      [1] = "Players",
             type = "type.name"
-		}
-	},
-	Lighting = {
-		name = "Lighting",
-		type = "type.library",
-		kind = "child",
-		value = {
-			[1] = "Lighting",
+    }
+  },
+  Lighting = {
+    name = "Lighting",
+    type = "type.library",
+    kind = "child",
+    value = {
+      [1] = "Lighting",
             type = "type.name"
-		}
-	},
-	ServerStorage = {
-		name = "ServerStorage",
-		type = "type.library",
-		kind = "child",
-		value = {
-			[1] = "ServerStorage",
+    }
+  },
+  ServerStorage = {
+    name = "ServerStorage",
+    type = "type.library",
+    kind = "child",
+    value = {
+      [1] = "ServerStorage",
             type = "type.name"
-		}
-	},
-	ServerScriptService = {
-		name = "ServerScriptService",
-		type = "type.library",
-		kind = "child",
-		value = {
-			[1] = "ServerScriptService",
+    }
+  },
+  ServerScriptService = {
+    name = "ServerScriptService",
+    type = "type.library",
+    kind = "child",
+    value = {
+      [1] = "ServerScriptService",
             type = "type.name"
-		}
-	},
-	ReplicatedStorage = {
-		name = "ReplicatedStorage",
-		type = "type.library",
-		kind = "child",
-		value = {
-			[1] = "ReplicatedStorage",
+    }
+  },
+  ReplicatedStorage = {
+    name = "ReplicatedStorage",
+    type = "type.library",
+    kind = "child",
+    value = {
+      [1] = "ReplicatedStorage",
             type = "type.name"
-		}
-	},
-	ReplicatedFirst = {
-		name = "ReplicatedFirst",
-		type = "type.library",
-		kind = "child",
-		value = {
-			[1] = "ReplicatedFirst",
+    }
+  },
+  ReplicatedFirst = {
+    name = "ReplicatedFirst",
+    type = "type.library",
+    kind = "child",
+    value = {
+      [1] = "ReplicatedFirst",
             type = "type.name"
-		}
-	},
-	StarterGui = {
-		name = "StarterGui",
-		type = "type.library",
-		kind = "child",
-		value = {
-			[1] = "StarterGui",
+    }
+  },
+  StarterGui = {
+    name = "StarterGui",
+    type = "type.library",
+    kind = "child",
+    value = {
+      [1] = "StarterGui",
             type = "type.name"
-		}
-	},
-	StarterPack = {
-		name = "StarterPack",
-		type = "type.library",
-		kind = "child",
-		value = {
-			[1] = "StarterPack",
+    }
+  },
+  StarterPack = {
+    name = "StarterPack",
+    type = "type.library",
+    kind = "child",
+    value = {
+      [1] = "StarterPack",
             type = "type.name"
-		}
-	},
-	SoundService = {
-		name = "SoundService",
-		type = "type.library",
-		kind = "child",
-		value = {
-			[1] = "SoundService",
+    }
+  },
+  SoundService = {
+    name = "SoundService",
+    type = "type.library",
+    kind = "child",
+    value = {
+      [1] = "SoundService",
             type = "type.name"
-		}
-	},
-	Workspace = {
-		name = "Workspace",
-		type = "type.library",
-		kind = "child",
-		value = {
-			[1] = "Workspace",
+    }
+  },
+  Workspace = {
+    name = "Workspace",
+    type = "type.library",
+    kind = "child",
+    value = {
+      [1] = "Workspace",
             type = "type.name"
-		}
-	},
-	StarterPlayer = {
-		name = "StarterPlayer",
-		type = "type.library",
-		kind = "child",
-		value = {
-			[1] = "StarterPlayer",
+    }
+  },
+  StarterPlayer = {
+    name = "StarterPlayer",
+    type = "type.library",
+    kind = "child",
+    value = {
+      [1] = "StarterPlayer",
             type = "type.name",
             child = {
                 StarterPlayerScripts = {
@@ -143,27 +143,27 @@ m.dataModelChild = {
                     }
                 }
             }
-		}
-	}
+    }
+  }
 }
 
 m.playerChild = {
-	Backpack = {
-		name = "Backpack",
-		type = "type.library",
-		kind = "child",
-		value = {
-			[1] = "Backpack",
+  Backpack = {
+    name = "Backpack",
+    type = "type.library",
+    kind = "child",
+    value = {
+      [1] = "Backpack",
             type = "type.name",
             child = {}
-		}
-	},
-	Character = {
-		name = "Character",
-		type = "type.library",
-		kind = "property",
-		value = {
-			[1] = "Model",
+    }
+  },
+  Character = {
+    name = "Character",
+    type = "type.library",
+    kind = "property",
+    value = {
+      [1] = "Model",
             type = "type.name",
             child = {
                 Humanoid = {
@@ -185,28 +185,28 @@ m.playerChild = {
                     }
                 },
             }
-		},
-	},
-	PlayerGui = {
-		name = "PlayerGui",
-		type = "type.library",
-		kind = "child",
-		value = {
-			[1] = "PlayerGui",
+    },
+  },
+  PlayerGui = {
+    name = "PlayerGui",
+    type = "type.library",
+    kind = "child",
+    value = {
+      [1] = "PlayerGui",
             type = "type.name",
             child = {}
-		}
-	},
-	PlayerScripts = {
-		name = "PlayerScripts",
-		type = "type.library",
-		kind = "child",
-		value = {
-			[1] = "PlayerScripts",
+    }
+  },
+  PlayerScripts = {
+    name = "PlayerScripts",
+    type = "type.library",
+    kind = "child",
+    value = {
+      [1] = "PlayerScripts",
             type = "type.name",
             child = {}
-		}
-	},
+    }
+  },
 }
 
 m.customType = {
@@ -375,7 +375,7 @@ local typeEnums = {
 }
 
 local function loadLibLocale(langID, result)
-	result = result or {}
+  result = result or {}
     -- local path = (ROOT / 'locale' / langID / 'library.lua'):string()
     -- local localeContent = util.loadFile(path)
     -- if localeContent then
@@ -386,13 +386,14 @@ end
 
 function m.init()
     local libDoc = loadLibLocale('en-US')
-	if lang.id ~= 'en-US' then
-		loadLibLocale(lang.id, libDoc)
-	end
+  if lang.id ~= 'en-US' then
+    loadLibLocale(lang.id, libDoc)
+  end
     local parser = require("parser")
     m.global = {}
     m.testez = {}
-    for tbl, file in pairs({[m.global] = "env.luau", [m.testez] = "3rd/testez.luau"}) do
+    m.krnl = {}
+    for tbl, file in pairs({[m.global] = "env.luau", [m.testez] = "3rd/testez.luau", [m.krnl] = "krnl.luau"}) do
         local state = parser:compile(util.loadFile(ROOT / "def" / file), "lua")
         state.ast.uri = tostring(ROOT / "def" / file)
         local env
@@ -450,7 +451,7 @@ function m.init()
             end
         end
     end
-	m.initialized = true
+  m.initialized = true
 end
 
 return m

@@ -752,6 +752,9 @@ end
 local function parseDocumentaion()
     if not m.Docs then
         m.Docs = json.decode(util.loadFile(ROOT / "api" / "API-Docs.json"))
+        for k, v in pairs(json.decode(util.loadFile(ROOT / "api" / "Krnl-Docs.json"))) do
+          m.Docs[k] = v
+        end
     end
     local success, err = pcall(function ()
         for id, doc in pairs(m.Docs) do
@@ -968,6 +971,9 @@ function m.init()
         defaultlibs.init()
     end
     m.global = util.deepCopy(defaultlibs.global)
+    for k, v in pairs(defaultlibs.krnl) do
+      m.global[k] = v
+    end
     m.object = util.deepCopy(defaultlibs.object)
     local api = m.loadApi()
     local classNames = m.getClassNames()
