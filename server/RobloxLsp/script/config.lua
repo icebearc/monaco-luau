@@ -210,7 +210,7 @@ local ConfigTemplate = {
         importPathType    = {"Both", String},
         goToScriptLink    = {true,      Boolean},
         serviceAutoImport = {true,      Boolean},
-        serverPort        = {27843,       Integer},
+        serverPort        = {27844,       Integer},
     },
     typeChecking = {
         mode            = {'Disabled', String},

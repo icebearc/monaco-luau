@@ -971,13 +971,7 @@ function m.init()
     if not defaultlibs.initialized then
         defaultlibs.init()
     end
-    if m.global then
-      return -- MIGHT BREAK ROBLOX CLIENT SYNC
-    end
     m.global = util.deepCopy(defaultlibs.global)
-    for k, v in pairs(defaultlibs.krnl) do
-      m.global[k] = v
-    end
     m.object = util.deepCopy(defaultlibs.object)
     local api = m.loadApi()
     local classNames = m.getClassNames()

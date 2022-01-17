@@ -385,15 +385,14 @@ local function loadLibLocale(langID, result)
 end
 
 function m.init()
-    local libDoc = loadLibLocale('en-US')
+  local libDoc = loadLibLocale('en-US')
   if lang.id ~= 'en-US' then
     loadLibLocale(lang.id, libDoc)
   end
     local parser = require("parser")
     m.global = {}
     m.testez = {}
-    m.krnl = {}
-    for tbl, file in pairs({[m.global] = "env.luau", [m.testez] = "3rd/testez.luau", [m.krnl] = "krnl.luau"}) do
+    for tbl, file in pairs({[m.global] = "env.luau", [m.testez] = "3rd/testez.luau"}) do
         local state = parser:compile(util.loadFile(ROOT / "def" / file), "lua")
         state.ast.uri = tostring(ROOT / "def" / file)
         local env

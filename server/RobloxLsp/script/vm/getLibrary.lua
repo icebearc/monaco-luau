@@ -13,7 +13,7 @@ function vm.getLibraryName(source, deep)
 end
 
 function vm.isGlobalLibraryName(name)
-    if rbxlibs.global[name] or rbxlibs.krnl[name] then
+    if rbxlibs.global[name] then
         return true
     end
 end

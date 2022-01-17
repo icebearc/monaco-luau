@@ -184,6 +184,9 @@ type ENV = {
 	delay: (delayTime: number?, callback: function) -> (),
 	script: LuaSourceContainer,
 	assert: (value: any, errorMessage: string?) -> any,
+
+	-- Krnl
+	hookfunction: (fn: function, hook: function) -> function,
 }
 
 type DateTypeArg = {

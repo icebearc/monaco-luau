@@ -16,6 +16,7 @@ MonacoServices.install(monaco);
 
 // If you change the port, make sure to also change it for the server!
 const port = 8080;
+const pluginPort = 27844;
 
 registerLanguage();
 registerFormatting({
@@ -29,7 +30,7 @@ registerFormatting({
 monaco.editor.defineTheme("luau-dark", theme);
 
 const protocol = location.protocol === "https:" ? "wss" : "ws";
-connectLanguageServer(`${protocol}://${location.hostname}:${port}`);
+connectLanguageServer(`${protocol}://${location.hostname}:${port}`, `${protocol}://${location.hostname}:${pluginPort}`);
 
 const editor = monaco.editor.create(document.querySelector("#editor-container")!, {
 	model: monaco.editor.createModel(`function test()\nprint('hello')\nend`, "lua"),

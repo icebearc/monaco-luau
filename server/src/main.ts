@@ -2,9 +2,11 @@ import * as rpc from "vscode-ws-jsonrpc";
 import { WebSocketServer } from "ws";
 
 import { launch } from "./launch";
+import { startPluginServer } from "./startPluginServer";
 
 // If you change the port, make sure to also change it for the client!
 const port = 8080;
+const pluginPort = 27844;
 
 new WebSocketServer({ port }).on("connection", webSocket => {
 	const socket: rpc.IWebSocket = {
@@ -23,3 +25,5 @@ new WebSocketServer({ port }).on("connection", webSocket => {
 		webSocket.on("open", () => launch(socket));
 	}
 });
+
+startPluginServer(pluginPort);
