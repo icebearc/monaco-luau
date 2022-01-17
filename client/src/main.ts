@@ -59,4 +59,6 @@ const editor = monaco.editor.create(document.querySelector("#editor-container")!
 	suggest: { snippetsPreventQuickSuggestions: false },
 });
 
+window.onresize = () => editor.layout();
+
 editor.getAction("editor.action.formatDocument").run();
