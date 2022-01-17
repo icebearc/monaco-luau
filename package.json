@@ -1,5 +1,5 @@
 {
-	"name": "monaco-lua-example",
+	"name": "krnl-editor",
 	"scripts": {
 		"dev": "npm run dev -w server & npm run dev -w client",
 		"dev-client": "npm run dev -w client",

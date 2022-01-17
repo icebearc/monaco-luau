@@ -1,4 +1,4 @@
-# Monaco Lua Example
+# Krnl Editor
 
 An example setup using sumneko's [Lua Language Server](https://github.com/sumneko/lua-language-server/) and JohnnyMorganz's [StyLua](https://github.com/JohnnyMorganz/StyLua) together with [Monaco Editor](https://github.com/microsoft/monaco-editor).
 
@@ -11,15 +11,9 @@ An example setup using sumneko's [Lua Language Server](https://github.com/sumnek
 - 🦀 Formatting (via wasm)
 - ⚡ Vite based client
 
-## Info
-
-- Right now I've tested the lua language server only on linux.
-- The language server uses port `8080`, so make sure this port is free or change the port in `client/src/main.ts` and `server/src/main.ts`
-- This is an npm workspaces setup, so you can run alle npm scripts inside the repository's root folder.
-
 ## Get started
 
-Clone this repository and run run `npm install`.
+Clone this repository and run `npm install`.
 
 ## Development
 
@@ -31,6 +25,7 @@ Run `npm run build`. To start the language server run `npm run server-start`.
 
 ## Credits
 
+- arnoson's [monaco-lua-example](https://github.com/arnoson/monaco-lua-example)
 - sumneko's [Lua Language Server](https://github.com/sumneko/lua-language-server/)
 - JohnnyMorganz's [StyLua](https://github.com/JohnnyMorganz/StyLua)
 - Typefox's [monaco-languageclient](https://github.com/TypeFox/monaco-languageclient) and [vscode-ws-jsonrpc](https://github.com/TypeFox/vscode-ws-jsonrpc)
