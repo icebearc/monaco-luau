@@ -9,7 +9,8 @@ m.namespace = {
     Roact = true,
     Rodux = true,
     Promise = true,
-    Fusion = true
+    Fusion = true,
+    Drawing = true
 }
 
 m.primitiveTypes = {
