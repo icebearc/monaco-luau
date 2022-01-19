@@ -1,6 +1,6 @@
 export type Drawing.Font = number
 
-export type Drawing.Line = {
+export type Drawing.Line = Drawing & {
 	Thickness: number,
 	From: Vector2,
 	To: Vector2,
