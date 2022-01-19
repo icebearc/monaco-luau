@@ -8,10 +8,6 @@ export function startPluginServer(port: number) {
 	const server = http.createServer(app);
 	const wss = new WebSocketServer({ server });
 
-	wss.on("connection", _ws => {
-		console.log("establish websocket connection");
-	});
-
 	app.use(
 		"/update",
 		express.json({

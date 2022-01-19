@@ -42,15 +42,8 @@ export const connectLanguageServer = (url: string, pluginUrl: string) =>
 	});
 
 const connectPluginServer = (url: string, client: MonacoLanguageClient) => {
-	console.log("Connecting to plugin server");
 	const socket = new ReconnectingWebSocket(url);
-
-	socket.addEventListener("open", () => {
-		console.log("Connected to plugin server!");
-	});
-
 	socket.addEventListener("message", event => {
-		console.log("Received update");
 		const data = JSON.parse(event.data);
 		client.sendNotification("$/updateDataModel", data);
 	});
