@@ -1,6 +1,6 @@
-# Krnl Editor
+# Roblox Luau LSP Monaco Editor
 
-An example setup using sumneko's [Lua Language Server](https://github.com/sumneko/lua-language-server/) and JohnnyMorganz's [StyLua](https://github.com/JohnnyMorganz/StyLua) together with [Monaco Editor](https://github.com/microsoft/monaco-editor).
+An example setup using Nightrains's [RobloxLsp](https://github.com/NightrainsRbx/RobloxLsp) and JohnnyMorganz's [StyLua](https://github.com/JohnnyMorganz/StyLua) together with [Monaco Editor](https://github.com/microsoft/monaco-editor).
 
 ## Features
 
@@ -26,7 +26,7 @@ Run `npm run build`. To start the language server run `npm run server-start`.
 ## Credits
 
 - arnoson's [monaco-lua-example](https://github.com/arnoson/monaco-lua-example)
-- sumneko's [Lua Language Server](https://github.com/sumneko/lua-language-server/)
+- Nightrain's [RobloxLsp](https://github.com/NightrainsRbx/RobloxLsp)
 - JohnnyMorganz's [StyLua](https://github.com/JohnnyMorganz/StyLua)
 - Typefox's [monaco-languageclient](https://github.com/TypeFox/monaco-languageclient) and [vscode-ws-jsonrpc](https://github.com/TypeFox/vscode-ws-jsonrpc)
 - CodinGame's [monaco-jsonrpc](https://github.com/CodinGame/monaco-jsonrpc)
